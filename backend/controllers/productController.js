@@ -3,6 +3,9 @@ import { v4 as uuidv4 } from "uuid";
 
 // Add new product (Admin)
 export const addProduct = async (req, res) => {
+  console.log("Request body:", req.body);
+  console.log("Request headers:", req.headers);
+  
   const { name, description, category, price, stock, image } = req.body;
 
   try {
@@ -19,6 +22,7 @@ export const addProduct = async (req, res) => {
     await product.save();
     res.status(201).json(product);
   } catch (err) {
+    console.log("Validation error:", err.message);
     res.status(500).json({ message: err.message });
   }
 };
