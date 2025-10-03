@@ -1,0 +1,8 @@
+{
+  "sid": "SE_2021_020",
+  "name": "Keerthi Gopalavannan",
+  "app-url(Backend)": "https://localhost:5000",
+  "app-url(Frontend)": "https://localhost:3000", 
+  "git": "https://github.com/keerthigopalm/GreenWorld",
+  "blog": "https://medium.com/@keerthigopalm/building-secure-e-commerce-with-oidc-paypal-and-mern-stack-1f201ba5eded"
+}
